@@ -43,7 +43,7 @@ nav .logo {
   background: white;
   border-bottom: 1px solid #cbcbcb;
   transition: all ease-in-out 0.1s;
-  padding: 10px 30px;
+  padding: 10px 0px;
 }
 
 .scrolling-active img {
