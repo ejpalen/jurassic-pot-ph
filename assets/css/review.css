@@ -1,0 +1,144 @@
+body{
+  background: var(--c7);
+}
+
+.review-wrapper{
+    margin: 140px 60px 20px;
+}
+
+.review-wrapper h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.review{
+  background: var(--c1);
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  border: 1px solid #F1E4DA;
+      display: flex;
+      gap: 20px;
+}
+
+.review-img-wrapper{
+  display: flex;
+    align-items: end;
+    background-color: var(--c7);
+    border: 1px solid #F1E4DA;
+    border-radius: 10px;
+}
+
+.review-img-wrapper img{
+  width: 400px;
+}
+
+.review-wrapper form{
+    background-color: var(--c7);
+    border: 1px solid #F1E4DA;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+    align-items: center;
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.review-wrapper form label{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.review-wrapper form label input, .review-wrapper form label textarea{
+  width: inherit;
+  margin-top: 5px;
+  padding: 9px;
+  width: calc(100% - 20px);
+  border: none;
+  border: 1px solid var(--c5);
+  border-radius: 10px;
+}
+
+.review-wrapper form input[type="submit"]{
+  padding: 10px 20px;
+  background: var(--c5);
+  color: var(--c7) !important;
+  border: none;
+  border-radius: 10px;
+}
+
+.review-wrapper form input[type="submit"]:hover, .review-confirmation-buttons a:hover{
+  background-color: #484D51;
+  cursor: pointer;
+}
+
+.rating{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 50px;
+    color: #666 !important;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #FCD53F !important;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #FCD53F !important;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #FCD53F !important;
+  }
+  
+
+  .review-confirmation-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--c1);
+    border: 1px solid #F1E4DA;
+    padding: 40px;
+    border-radius: 20px;
+  }
+
+  .review-confirmation-buttons {
+margin-top: 10px;
+display: flex;
+gap: 10px;
+justify-content: center;
+align-items: center;
+  }
+
+  .review-confirmation-buttons a{
+    padding: 5px 10px;
+    background-color: var(--c5);
+    color: var(--c7) !important;
+    border-radius: 10px;
+  }

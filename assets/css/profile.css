@@ -1,0 +1,210 @@
+body{
+    background: var(--c7);
+}
+
+.profilewrapper{
+    margin: 150px 60px 40px;
+}
+
+.order-history, .user-details{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.order-history h1{
+    margin-bottom: 20px;
+}
+
+.account-top, .order-history-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account-top a{
+    margin-top: 0 !important;
+}
+
+.order, .user-details div, .profilewrapper form{
+    background-color: var(--c1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #F1E4DA;
+}
+
+.user-details div{
+    padding: 20px;
+    margin-top: 20px !important;
+}
+
+.user-details section{
+    margin-top: 20px;
+}
+
+.profilewrapper form{
+    margin: 0px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profilewrapper form label{
+    display: flex;
+    align-items: center;
+}
+
+.profilewrapper form label p{
+    width: 140px;
+}
+
+.profilewrapper form label input{
+    padding: 10px;
+    border: none;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.form-buttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    
+}
+
+.cancel-btn{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    
+}
+
+.delete-btn{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    background-color: #CB2F30;
+    color: var(--c7) !important;
+}
+
+
+.user-edit{
+    margin-top: 20px;
+}
+
+.order-header{
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.order-header form b{
+    display: flex;
+    gap: 5px;
+}
+
+.order-header form input[type="submit"]{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid var(--c5);
+    background-color: var(--c7);
+}
+
+.order-header form input[type="submit"]:hover{
+    background-color: #484D51;
+    color: var(--c7) !important;
+    border: 1px solid #484D51;
+    cursor: pointer;
+}
+
+
+.order-header div{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-product{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ECD9CB;
+    padding-top: 10px;
+}
+
+.order img{
+    width: auto;
+    height: 80px;
+    border-radius: 5px;
+    background-color: var(--c1);
+}
+
+.order-product-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.order-product-right a, .user-details a, .form-buttons input, .profilewrapper #orderStatus, .canc-btn{
+    background-color: #3c4043;
+    color: white !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.canc-btn{
+    margin-left: 20px;
+    padding: 0 !important;
+    background-color: #CB2F30;
+}
+
+.canc-btn-form{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.canc-btn-form input[type="submit"]{
+    border: 1px solid #CB2F30 !important;
+    background-color: #CB2F30 !important;
+    padding: 10px;
+    color: white !important;
+}
+
+.order-product-right a:hover, .user-details a:hover, .form-buttons input:hover{
+    background-color: #484D51;
+}
+
+
+.profilewrapper #orderStatus{
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#orderStatus option{
+    color: var(--c7) !important;
+}
+
+
+.order-total{
+    border-top: 1px solid #C7C7C7;
+    margin: 10px;
+}
+
+.order-total-wrapper{
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+    align-items: center;
+    margin-left: auto;
+    justify-content: end;
+}
+
+.guest a{
+    text-decoration: underline;
+}

@@ -1,0 +1,237 @@
+body {
+  background-color: var(--c7);
+  min-width: 400px;
+}
+
+.productswrapper {
+  margin-bottom: 80px;
+}
+.cartwrapper {
+  margin: 150px 60px 0;
+  width: 90%;
+  overflow: hidden;
+}
+
+.cartwrapper h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.prod1 {
+  background-color: var(--c1);
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 60px;
+  align-items: center;
+  border: 1px solid #F1E4DA;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.prodinfo {
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+.prodinfo p {
+  width: 200px;
+}
+
+.prodinfo img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background: var(--c7);
+  border: 1px solid #F1E4DA;
+}
+
+.prodpricewrapper {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.prodtotal {
+  margin-right: 20px;
+}
+
+.prodtotal form {
+  display: flex;
+}
+
+.prodpricewrapper a{
+  margin-left: 5px;
+}
+
+.prodpricewrapper a button{
+  background-color: #3c4043;
+  padding: 5px 10px;
+  color: white !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prodpricewrapper .deletebtn svg{
+  fill: #3c4043 !important;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  display: flex;
+}
+
+.prodpricewrapper .deletebtn{
+  border-radius: 100%;
+  width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-left: 0;
+    
+}
+
+.prodpricewrapper .deletebtn:hover{
+      
+  background-color: #EF320E;
+}
+
+.prodpricewrapper .deletebtn:hover svg{
+  height: 18px;
+  fill: white !important;
+}
+
+.prodtotal input {
+  margin-left: 5px;
+  width: 100px;
+  padding: 5px;
+  border: none;
+  border: 1px solid #3c4043;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+
+.prodprice{
+  margin-right: 15px;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+}
+
+.total {
+  margin: 20px 60px;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.total button, .total input {
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #3c4043;
+  color: white !important;
+  border: none;
+  border-radius: 5px;
+}
+
+.total input:hover {
+  cursor: pointer;
+}
+
+#no-items{
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 780px) {
+  .prodtotal {
+    margin-right: 0;
+  }
+
+  .prodpricewrapper {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .prodpricewrapper div {
+    margin: 3px;
+  }
+
+  .prodtotal input {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  label {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .prod1 {
+    width: 95%;
+    padding: 5px;
+  }
+
+  .prodinfo img {
+    padding: 5px;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .prod1 {
+    flex-direction: column;
+  }
+
+  .prodinfo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .prodinfo img {
+    margin-right: 0;
+    width: 140px;
+    height: 140px;
+  }
+  .prodpricewrapper {
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .prodtotal {
+    flex-direction: column;
+  }
+
+  .prodtotal input {
+    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+
+  .prodtotal form {
+    flex-direction: column;
+  }
+
+  .prodinfo p {
+    font-size: 20px;
+    width: 250px;
+  }
+
+  .cartwrapper h1 {
+    text-align: center;
+  }
+
+  .prodprice p {
+    margin-top: 10px;
+  }
+
+  .total {
+    align-items: center;
+  }
+}

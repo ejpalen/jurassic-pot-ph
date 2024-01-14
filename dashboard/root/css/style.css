@@ -1,0 +1,558 @@
+.no-scrollbar {
+    overflow: hidden;
+}
+.flex {
+    display: flex;
+}
+
+.w-100 {
+    width: 100%;
+}
+.w-75 {
+    width: 75%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-25 {
+    width: 25%;
+}
+
+.h-100 {
+    height: 100%;
+}
+.h-75 {
+    height: 75%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-25 {
+    height: 25%;
+}
+
+.flex { display: flex; }
+.j-center { justify-content: center;}
+.j-between { justify-content: space-between;}
+.ai-center {
+    align-items: center;
+}
+.txt-center {
+    text-align: center;
+}
+.txt-left {
+    text-align: left;
+}
+.txt-right {
+    text-align: right;
+}
+
+
+.fs-Xb1 { font-size: var(--fsXb1);}
+.fs-Xb2 { font-size: var(--fsXb2);}
+.fs-Xb3 { font-size: var(--fsXb3);}
+.fs-b1 { font-size: var(--fsb1);}
+.fs-b2 { font-size: var(--fsb2);}
+.fs-b3 { font-size: var(--fsb3);}
+.fs-normal { font-size: var(--fsbNormal);}
+.fs-sm1 { font-size: var(--fssm1);}
+.fs-sm2 { font-size: var(--fssm2);}
+.fs-sm3 { font-size: var(--fssm3);}
+
+.bold {font-weight: bold;}
+
+.c1 {color: var(--c1);}
+.c2 {color: var(--c2);}
+.c3 {color: var(--c3);}
+.c4 {color: var(--c4);}
+.c5 {color: var(--c5);}
+.c6 {color: var(--c6);}
+.c7 {color: var(--c7);}
+
+body {
+    background: var(--c1) !important;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+.dashboardSide1, .sideNav {
+    width: 250px;
+}
+.sideNav {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background-color: var(--c7);
+    padding: 0 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.04);
+}
+.sideNavLogo {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: var(--fsXb1);
+    font-weight: bold;
+}
+
+.sideNavLogo img{
+    width: auto;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.sideNavTitle {
+    font-size: var(--fsb1);
+    font-weight: bold;
+    color: var(--c5);
+    margin: 0px 0 10px 0;
+}
+.sideNavLinksCont {
+    width: 100%;
+}
+.sideNavLinks {
+    text-decoration: none;
+    color: var(--c5);
+    border-radius: var(--br1);
+    font-size: var(--fsb2);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
+    margin: 0 0 10px 0;
+}
+
+.sideNavLinks p{
+    font-size: 16px;
+}
+
+.sideNavLinksActive, .sideNavLinksActive p {
+    background: var(--c6);
+    color: var(--c1) !important;
+}
+
+
+.sideNavLogout {
+    bottom: 0;
+    position: absolute;
+}
+.sideNavIcon {
+    font-size: var(--fsb1);
+    margin: 0 10px 0 0;
+}
+
+/*Home*/
+.dashboardSide2 {
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 100px;
+    padding: 40px;
+    position: relative;
+}
+.homeTitle {
+    font-size: var(--fsXb3);
+    color: var(--c5);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.homeSmBox {
+    flex-grow: 1;
+    border-radius: var(--br1);
+    background: var(--c7);
+    padding: 30px;
+    border: 1px solid #F1E4DA;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.homeSmBox img{
+    height: 40px;
+    margin-top: 5px;
+}
+
+.homeSmBox p{
+    font-size: var(--fsXb3);
+}
+
+.table1 {
+    width: 100%;
+    color: var(--c1);
+}
+.table1Row {
+    display: flex;
+    background: var(--c6);
+    border-top: 2px solid #f2f2f2;
+}
+.table1Row2 {
+    display: flex;
+}
+.tableHeader {
+    width: 17%;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: var(--fsb2);
+}
+.tableData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: var(--fsb3);
+    background: var(--c7);
+    color: var(--c5);
+}
+.tableHeaderAction, .tableActions {
+    display: flex;
+    flex-grow: 1;
+}
+.tableActions {
+    background: var(--c7);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.button1 {
+    width: 100%;
+    padding: 5px;
+    background-color: #CB2F30;
+    color: var(--c7) !important;
+    font-size: var(--fsbNormal);
+    border: none;
+    border-radius: var(--br1);
+}
+
+.tableActions .button1{
+    padding: 0 20px;
+    width: fit-content;
+}
+
+
+/*Products*/
+.productsCont {
+    width: 100%;
+    display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates four columns with equal width */
+  gap: 10px; /* Adds a gap between the grid items */
+}
+.addProductBtn {
+    padding: 10px 20px;
+    border-radius: var(--br1);
+    background: var(--c6);
+    display: inline-block;
+    cursor: pointer;
+
+}
+.addProductBtn p, .addProductBtn i {
+    color: var(--c7) !important;
+}
+.addProductBtn i {
+    margin: 0 10px 0 0;
+}
+.productCard {
+    width: auto;
+    height: max-content;
+    border-radius: var(--br1);
+    background: var(--c7);
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.04);
+}
+.productImgCont {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    border-radius: var(--br1);
+    overflow:hidden;
+    background-color: #F5F8ED;
+    display: flex;
+    justify-content: center;
+}
+.productName {
+    width: 100%;
+    height: 20%;
+    padding: 10px 0 0 0;
+    
+}
+.productCardName {
+    color: var(--c5);
+    font-size: var(--fsb3);
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1; /* Number of lines to show */
+    margin-bottom: 5px;
+}
+.productCardDesc1 {
+    color: var(--c5);
+    font-size: var(--fsbNormal);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+}
+.productActions {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+.button2 {
+    width: 40%;
+    border: none;
+    border-radius: var(--br1);
+    cursor: pointer;
+    padding: 5px;
+    color: var(--c7) !important;
+}
+#editProduct {
+    background: var(--c6);
+    color: var(--c1);
+    flex: 1;
+}
+#deleteProduct {
+    background: #CB2F30;
+    color: var(--c1);
+    flex: 1;
+}
+.productImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.productImgCont .productImg{
+    height: 230px;
+    width: 230px;
+}
+
+.editProductModalBox .productImg {
+    height: 400px;
+}
+
+.editProductModal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.editProductModalBox {
+    padding: 20px;
+    width: 1000px;
+    box-sizing: border-box;
+    border-radius: var(--br1);
+    background: var(--c7);
+}
+.editProductInnerCont {
+    width: 100%;
+    height: 100%;
+}
+.editProductPFP {
+    position: relative;
+    background: var(--c1);
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+    border-radius: var(--br1);
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+}
+.editProductInfos {
+    width: 60%;
+    box-sizing: border-box;
+}
+.editProductInput {
+    height: 30px;
+    padding: 20px 10px;
+}
+.editProducttextArea, .editProductInput {
+    font-size: var(--fsb2);
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: var(--br1);
+    border: 1px solid var(--c5);
+    margin-bottom: 10px;
+}
+.editProductInputFile {
+    height: 30px;
+    margin-bottom: 10px;
+}
+.editProducttextArea {
+    height: 150px;
+    resize: none;
+    padding: 10px;
+}
+.editProductOption {
+    display: flex;
+    width: 100%;
+}
+.editProdBtn {
+    padding: 5px 20px;
+    border-radius: var(--br1);
+    background: var(--c6);
+    font-size: var(--fsb3);
+    color: var(--c1) !important;
+    margin-right: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#editProdCancelBtn, #addProdCancelBtn{
+background-color: #CB2F30 ;
+}
+
+.editprod1{
+    display: flex;
+    gap: 10px;
+}
+
+.aboutUsCOnt {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    resize: none;
+    border-radius: var(--br1);
+}
+
+.dashboardSide2 .order-header{
+    display: block;
+}
+
+.dashboardSide2 .order-header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-menu{
+    margin-bottom: 15px;
+}
+
+.order-menu select, .order-header select{
+    padding: 10px 40px;
+    border: none;
+    border: 1px solid var(--c6);
+    border-radius: 5px;
+    background: var(--c6);
+    color: var(--c7) !important;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.04);
+}
+
+.order-menu select:hover, .order-header select:hover {
+    cursor: pointer;
+  }
+
+.order{
+    background: var(--c7) !important;
+}
+
+option{
+    color: var(--c7) !important;
+}
+
+.user{
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    width: fit-content;
+    border: 1px solid #F1E4DA;
+}
+
+.user img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: var(--c5);
+}
+
+.user .user-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.user-topright{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.user .user-delete{
+    width: fit-content;
+    color: var(--c7) !important;
+}
+
+.user .user-delete button{
+    background: none;
+    background-color: #EF320E !important;
+}
+
+
+.user-delete .deletebtn svg {
+    fill: white !important;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    display: flex;
+}
+
+.userscontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: fit-content;
+    margin-bottom: 120px;
+}
+
+.dash-aboutus form{
+    padding-right: 20px;
+}
+
+.dash-aboutus textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 1px solid var(--c5);
+    border-radius: 5px;
+}
+
+.paragraph-1, .title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.update-button input{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--c5);
+    color: var(--c7) !important;
+}

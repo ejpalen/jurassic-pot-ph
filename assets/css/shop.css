@@ -1,0 +1,173 @@
+.maintain-pot {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.requirement {
+  width: fit-content;
+  margin-top: 40px;
+}
+
+.requirement-wrapper {
+  display: flex;
+}
+
+.maintain-pot-wrapper {
+  background-color: #e1eff0;
+  padding: 60px 0;
+}
+
+.water-requirement {
+  margin-left: 150px;
+}
+
+.requirement h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.requirement-list {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.requirement-list img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.action-bottom {
+  display: flex;
+  background-color: #ffecee;
+  padding: 100px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-bottom a {
+  padding: 10px 15px;
+  background-color: #1e191f;
+  color: white !important;
+}
+
+.action-bottom img {
+  width: 50%;
+  margin-right: 100px;
+}
+
+.action-bottom h1 {
+  width: 520px;
+  margin-bottom: 30px;
+}
+
+.product-wrapper{
+  margin-top: 150px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-top: 1px solid #cbcbcb;
+}
+
+.social-links img {
+  width: 40px;
+}
+
+.title {
+	width: 100%;
+	padding-top: 150px;
+	text-align: center;
+	
+}
+.prod-wrapper{
+    background-color: #FFFFFF;
+	margin: 0 100px;
+}
+
+.cont {
+    margin: auto;
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+  width: fit-content;
+  margin-bottom: 120px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+	list-style: none;
+}
+
+.grid_item a {
+  display: flex;
+  width: fit-content;
+}
+
+.grid_item a form{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.prod1 {
+	position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+
+.prod1 img{
+	background-color: #FBF7F4;
+	max-height: 315px;
+	max-width: 315px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.prod1 img:hover{
+  background-color: #FAF4F0;
+}
+
+.prod1 p {
+	padding-top: 2%;
+}
+
+.prod1 h3 {
+	font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 895px) {
+  .prod-wrapper {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .cont {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    gap: 40px;
+    width: fit-content;
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .prod1 img{
+    background-color: #FBF7F4;
+    max-height: 180px;
+    max-width: 180px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+}
